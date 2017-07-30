@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.jme3:jme3-effects:3.0.10">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jme3/jme3-effects/3.0.10/b5425eec52c1e5953993ce48b12c15bed1a66abf/jme3-effects-3.0.10.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jme3/jme3-effects/3.0.10/d14645e038b6fed4f6d9ce88d19cc7e2755ce752/jme3-effects-3.0.10-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

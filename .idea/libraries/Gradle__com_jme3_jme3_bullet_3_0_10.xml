@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.jme3:jme3-bullet:3.0.10">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jme3/jme3-bullet/3.0.10/831d86e761b43e5a66b6b59ca1d1262dcdc596db/jme3-bullet-3.0.10.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jme3/jme3-bullet/3.0.10/dcd85c452a2a179c0f4ae357f94efad03710a167/jme3-bullet-3.0.10-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

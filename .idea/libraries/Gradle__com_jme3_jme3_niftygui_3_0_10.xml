@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.jme3:jme3-niftygui:3.0.10">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jme3/jme3-niftygui/3.0.10/756e6a001ac847e6d4df59fd2a03178b5948fe5e/jme3-niftygui-3.0.10.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jme3/jme3-niftygui/3.0.10/55eb01da497301dd6ba75b3b5a66152e56fc69a5/jme3-niftygui-3.0.10-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
