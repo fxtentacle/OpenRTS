@@ -12,7 +12,6 @@ import java.util.prefs.BackingStoreException;
 import network.client.ClientManager;
 
 import com.jme3.app.Application;
-import com.jme3.app.LegacyApplication;
 import com.jme3.app.SimpleApplication;
 import com.jme3.app.StatsView;
 import com.jme3.bullet.BulletAppState;
@@ -34,14 +33,14 @@ import com.jme3.system.JmeContext.Type;
 import com.jme3.system.JmeSystem;
 import com.jme3.util.BufferUtils;
 
-public abstract class OpenRTSApplication extends LegacyApplication implements PhysicsTickListener {
+public abstract class OpenRTSApplication extends SimpleApplication  implements PhysicsTickListener {
 
 	private static final Logger logger = Logger.getLogger(OpenRTSApplication.class.getName());
 
 	public static OpenRTSApplication appInstance;
 
-	protected Node rootNode = new Node("Root Node");
-	protected Node guiNode = new Node("Gui Node");
+	//protected Node rootNode = new Node("Root Node");
+	//protected Node guiNode = new Node("Gui Node");
 
 	protected float secondCounter = 0.0f;
 
@@ -49,7 +48,7 @@ public abstract class OpenRTSApplication extends LegacyApplication implements Ph
 	protected MyDebugger debugger;
 	protected StatsView statsView;
 
-	protected AzertyFlyByCamera flyCam;
+	protected AzertyFlyByCamera azertyFlyByCamera;
 
 	private AppActionListener actionListener = new AppActionListener();
 
@@ -97,7 +96,7 @@ public abstract class OpenRTSApplication extends LegacyApplication implements Ph
 	}
 
 	public AzertyFlyByCamera getFlyByCamera() {
-		return flyCam;
+		return azertyFlyByCamera;
 	}
 
 	public Node getGuiNode() {
@@ -143,9 +142,9 @@ public abstract class OpenRTSApplication extends LegacyApplication implements Ph
 		guiViewPort.attachScene(guiNode);
 
 		if (inputManager != null) {
-			flyCam = new AzertyFlyByCamera(cam);
-			flyCam.setMoveSpeed(1f);
-			flyCam.registerWithInput(inputManager);
+			azertyFlyByCamera = new AzertyFlyByCamera(cam);
+			azertyFlyByCamera.setMoveSpeed(1f);
+			azertyFlyByCamera.registerWithInput(inputManager);
 
 			if (context.getType() == Type.Display) {
 				inputManager.addMapping("SIMPLEAPP_Exit", new KeyTrigger(KeyInput.KEY_ESCAPE));

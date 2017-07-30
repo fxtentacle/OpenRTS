@@ -28,18 +28,21 @@ allprojects {
 		maven { url "https://oss.sonatype.org/content/repositories/releases/" }
 		maven { url 'http://updates.jmonkeyengine.org/maven' }	
 		maven { url 'http://jcenter.bintray.com' }
+		maven { url "http://nifty-gui.sourceforge.net/nifty-maven-repo" }
+		maven { url "http://dl.bintray.com/jmonkeyengine/com.jme3" }
+
 	}
 	
 	dependencies {
 		// jMonkey Engine
-		compile "org.jmonkeyengine:jme3-core:$jmonkeyengine_version"
-		compile "org.jmonkeyengine:jme3-effects:$jmonkeyengine_version" 
-		compile "org.jmonkeyengine:jme3-networking:$jmonkeyengine_version"
-		compile "org.jmonkeyengine:jme3-blender:$jmonkeyengine_version"
-		compile "org.jmonkeyengine:jme3-bullet:$jmonkeyengine_version"
-		compile "org.jmonkeyengine:jme3-bullet-native:$jmonkeyengine_version"
-		compile "org.jmonkeyengine:jme3-lwjgl:$jmonkeyengine_version"
-		compile "org.jmonkeyengine:jme3-niftygui:$jmonkeyengine_version"
+		compile "com.jme3:jme3-core:$jmonkeyengine_version"
+		compile "com.jme3:jme3-effects:$jmonkeyengine_version"
+		compile "com.jme3:jme3-networking:$jmonkeyengine_version"
+		compile "com.jme3:jme3-blender:$jmonkeyengine_version"
+		compile "com.jme3:jme3-bullet:$jmonkeyengine_version"
+		compile "com.jme3:jme3-bullet-natives:$jmonkeyengine_version"
+		compile "com.jme3:jme3-lwjgl:$jmonkeyengine_version"
+		compile "com.jme3:jme3-niftygui:$jmonkeyengine_version"
 	}
 	
 	pmd {

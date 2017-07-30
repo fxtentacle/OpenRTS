@@ -30,8 +30,8 @@ public class GameMutliplayer extends OpenRTSApplication {
 		bulletAppState.getPhysicsSpace().setGravity(new Vector3f(0, 0, -1));
 		// stateManager.detach(bulletAppState);
 
-		flyCam.setUpVector(new Vector3f(0, 0, 1));
-		flyCam.setEnabled(false);
+		azertyFlyByCamera.setUpVector(new Vector3f(0, 0, 1));
+		azertyFlyByCamera.setEnabled(false);
 
 		EditorView view = new EditorView(rootNode, guiNode, bulletAppState.getPhysicsSpace(), assetManager, viewPort);
 
